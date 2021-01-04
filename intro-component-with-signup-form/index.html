@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <script defer src="./behavior.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      
+      <div class="box-left">
+        <h1>Learn to code by<br> 
+          watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+          but understanding how developers think is invaluable.
+        </p>
+      </div>
+      
+      <div class="box-right">
+        
+        <div class="form-header">
+          <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
+        </div>
+        
+        <div class="form-container">
+          <form action="" method="post">
+            
+            <div class="form-input">
+              <input type="text" id="first-name" name="firstName" placeholder="First Name" autocomplete="off" spellcheck="false">
+              <img class="error invisible" src="./images/icon-error.svg" alt="Error icon">
+              <p class="error mandatory-field-error invisible"><em>First Name cannot be empty</em></p>
+            </div>
+            
+            <div class="form-input">
+              <input type="text" id="last-name" name="lastName" placeholder="Last Name" autocomplete="off" spellcheck="false">
+              <img class="error invisible" src="./images/icon-error.svg" alt="Error icon">
+              <p class="error mandatory-field-error invisible"><em>Last Name cannot be empty</em></p>
+            </div>
+            
+            <div class="form-input">
+              <input type="email" id="email" name="email" placeholder="Email Address" autocomplete="off">
+              <img class="error invisible" src="./images/icon-error.svg" alt="Error icon">
+              <p class="error invisible mandatory-field-error"><em>Email cannot be empty</em></p>
+              <p class="error validation-error invisible"><em>Looks like this is not an email</em></p>
+            </div>
+            
+            <div class="form-input">
+              <input type="password" id="password" name="password" placeholder="Password">
+              <img class="error invisible" src="./images/icon-error.svg" alt="Error icon">
+              <p class="error mandatory-field-error invisible"><em>Password cannot be empty</em></p>
+            </div>
+            
+            <button type="submit">Claim your free trial</button>
+
+            <p class="form-footer">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
+          
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </header>
+  <footer>
+    <p>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Abhishek Roy</a>.
+    </p>
+  </footer>
+</body>
+</html>
